@@ -264,7 +264,7 @@ public class TreeNode {
                      * @return result
                      */
                 case "/":
-                    if (getRchild().getResult(arrayList).equals("0")) {
+                    if (getRchild().getResult(arrayList).equals("0")||getRchild().getResult(arrayList).equals("0")) {
                         while (str.equals("/")) {
                             str = String.valueOf(Ran.getOperator());
                             System.out.println(str);

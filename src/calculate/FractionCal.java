@@ -29,16 +29,13 @@ public class FractionCal {
 	    	numerator=first_numerator*second_denominator+first_denominator*second_numrator;      
 	    }    
 	    int gcd = gcd(numerator,denominator);
-	    if(gcd!=0) {
+	   
 		denominator = denominator / gcd;
 		numerator = numerator / gcd;
 		fs.setNumerator(numerator);
 		fs.setDenominator(denominator);
 		//System.out.println("加法输出的结果是"+fs.getRes());
-	    return fs;      
-	    }
-	    fs.setNumerator(numerator);
-		fs.setDenominator(0);
+	  
 	    return fs;   
 	}
 	//分数减法
@@ -60,17 +57,14 @@ public class FractionCal {
 	    	numerator=first_numerator*second_denominator-first_denominator*second_numerator;      
 	    }    
 	    int gcd = gcd(numerator,denominator);
-	    if(gcd!=0) {
+	    
 	    	
 	   
 		denominator = denominator / gcd;
 		numerator = numerator / gcd;	
 		fs.setNumerator(numerator);
 		fs.setDenominator(denominator);
-		 return fs;  
-	    }
-	    fs.setNumerator(numerator);
-		fs.setDenominator(0);
+		
 		//System.out.println("减法输出的结果是"+fs.getRes());
 	    return fs;      
 	    
@@ -87,15 +81,12 @@ public class FractionCal {
 	    numerator=first_numerator*second_numerator; 
 	      
 	    int gcd = gcd(numerator,denominator);
-	    if(gcd!=0){
+	    
 		denominator = denominator / gcd;
 		numerator = numerator / gcd;	
 		fs.setNumerator(numerator);
 		fs.setDenominator(denominator);
-		return fs;
-		}
-	    fs.setNumerator(numerator);
-		fs.setDenominator(0);;
+		
 		//System.out.println("乘法输出的结果是"+fs.getRes());
 	    return fs;      
 
@@ -113,16 +104,12 @@ public class FractionCal {
 		denominator = first_denominator*second_numerator;
 		   	
 	    int gcd = gcd(numerator,denominator);
-	    if(gcd!=0){	
+	   
 		denominator = denominator / gcd;
 		numerator = numerator / gcd;
 		fs.setNumerator(numerator);
 		fs.setDenominator(denominator);
-		return fs; 
-		}
-	   
-		fs.setNumerator(numerator);
-		fs.setDenominator(0);
+		
 		//System.out.println("除法输出的结果是"+fs.getRes());
 	    return fs;     
 

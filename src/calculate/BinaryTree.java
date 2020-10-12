@@ -18,7 +18,10 @@ public class BinaryTree {
     private int num;
     private ArrayList<TreeNode> opeList = new ArrayList<TreeNode>();
     private ArrayList<BinaryTree>binaryTreesList=new ArrayList<>();
-
+ 
+    public ArrayList<TreeNode> getOpeList() {
+	 return opeList;
+ }
 
     public BinaryTree(int num) {
         this.num = num;
